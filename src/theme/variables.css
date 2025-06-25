@@ -1,0 +1,105 @@
+/* Ionic Variables and Theming. For more info, please see:
+http://ionicframework.com/docs/theming/ */
+
+:root {
+  /* Primary Colors - Green Theme for Environmental App */
+  --ion-color-primary: #2dd36f;
+  --ion-color-primary-rgb: 45, 211, 111;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #28ba62;
+  --ion-color-primary-tint: #42d77d;
+
+  /* Secondary Colors - Earth Tones */
+  --ion-color-secondary: #3dc2ff;
+  --ion-color-secondary-rgb: 61, 194, 255;
+  --ion-color-secondary-contrast: #ffffff;
+  --ion-color-secondary-contrast-rgb: 255, 255, 255;
+  --ion-color-secondary-shade: #36abe0;
+  --ion-color-secondary-tint: #50c8ff;
+
+  /* Success - Recycling Green */
+  --ion-color-success: #10dc60;
+  --ion-color-success-rgb: 16, 220, 96;
+  --ion-color-success-contrast: #ffffff;
+  --ion-color-success-contrast-rgb: 255, 255, 255;
+  --ion-color-success-shade: #0ec254;
+  --ion-color-success-tint: #28e070;
+
+  /* Warning - Battery Alert */
+  --ion-color-warning: #ffce00;
+  --ion-color-warning-rgb: 255, 206, 0;
+  --ion-color-warning-contrast: #000000;
+  --ion-color-warning-contrast-rgb: 0, 0, 0;
+  --ion-color-warning-shade: #e0b500;
+  --ion-color-warning-tint: #ffd31a;
+
+  /* Danger - Expired Battery */
+  --ion-color-danger: #f04141;
+  --ion-color-danger-rgb: 245, 61, 61;
+  --ion-color-danger-contrast: #ffffff;
+  --ion-color-danger-contrast-rgb: 255, 255, 255;
+  --ion-color-danger-shade: #d33939;
+  --ion-color-danger-tint: #f25454;
+
+  /* Dark Theme */
+  --ion-color-dark: #222428;
+  --ion-color-dark-rgb: 34, 36, 40;
+  --ion-color-dark-contrast: #ffffff;
+  --ion-color-dark-contrast-rgb: 255, 255, 255;
+  --ion-color-dark-shade: #1e2023;
+  --ion-color-dark-tint: #383a3e;
+
+  /* Medium Gray */
+  --ion-color-medium: #92949c;
+  --ion-color-medium-rgb: 146, 148, 156;
+  --ion-color-medium-contrast: #ffffff;
+  --ion-color-medium-contrast-rgb: 255, 255, 255;
+  --ion-color-medium-shade: #808289;
+  --ion-color-medium-tint: #9d9fa6;
+
+  /* Light Gray */
+  --ion-color-light: #f4f5f8;
+  --ion-color-light-rgb: 244, 245, 248;
+  --ion-color-light-contrast: #000000;
+  --ion-color-light-contrast-rgb: 0, 0, 0;
+  --ion-color-light-shade: #d7d8da;
+  --ion-color-light-tint: #f5f6f9;
+}
+
+/* Custom App Colors */
+:root {
+  --pile-go-green: #2dd36f;
+  --pile-go-dark-green: #28ba62;
+  --pile-go-light-green: #d4f5e7;
+  --pile-go-orange: #ff9500;
+  --pile-go-blue: #3dc2ff;
+  --pile-go-gray: #8e8e93;
+  --pile-go-light-gray: #f2f2f7;
+}
+
+/* Custom Styling */
+.battery-card {
+  --background: var(--pile-go-light-green);
+  border-radius: 12px;
+  margin: 8px 0;
+}
+
+.expired-battery {
+  --background: #ffe6e6;
+  --color: var(--ion-color-danger);
+}
+
+.recycling-progress {
+  --background: linear-gradient(135deg, var(--pile-go-green), var(--pile-go-blue));
+  color: white;
+  border-radius: 16px;
+}
+
+.scan-button {
+  --background: var(--pile-go-green);
+  --border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin: 20px auto;
+}
